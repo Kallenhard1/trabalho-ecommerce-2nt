@@ -24,13 +24,13 @@
   
   /* Header styles */
   header {
-    background-color: #333;
+    background-color: rgb(36, 41, 47);
     color: #fff;
     padding: 20px;
   }
   
   header h1 {
-    margin: 0;
+    margin: 6px;
   }
   
   nav ul {
@@ -43,17 +43,30 @@
   }
   
   nav ul li a {
-    padding: 6px;
-    border: 1px solid #5e5e5e;
-    border-radius: 6px;
-    background: #333;
+    margin: 6px;
+    text-decoration: none;
     color: #fff;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
     text-decoration: none;
   }
 
   nav ul li a:hover {
-    color: #333;
-    background: #fff;
+    color: #fff;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: underline;
+    text-underline-offset: 6px;
   }
   
   /* Main styles */
@@ -64,12 +77,38 @@
   h2 {
     margin-bottom: 20px;
   }
+
+  .product-reel {
+    display: flex;
+    justify-content: center;
+    border-color: rgb(208, 215, 222);
+    /* border-top-style: solid; */
+    border-bottom-style: solid;
+    /* border-top-width: 1px; */
+    border-bottom-width: 1px;
+    width: 100%;
+    margin-bottom: 40px;
+    -webkit-box-pack: center;
+    flex-wrap: wrap-reverse;
+    gap: 16px;
+  }
+
+  .product-reel img{
+    width: 800px;
+    height: 800px;
+    max-width: 100%;
+    /* border: 1px solid rgb(208, 215, 222); */
+  }
   
   .product {
+    -webkit-text-size-adjust: 100%;
+    /* max-width: fit-content; */
     border: 1px solid #ddd;
     border-radius: 6px;
-    padding: 10px;
+    padding: 6px 13px;
     margin-bottom: 20px;
+    line-height: 1.5;
+    word-wrap: break-word;
   }
   
   .product img {
@@ -79,11 +118,20 @@
   }
 
   .product-button {
-    padding: 6px;
+    padding: 0px 12px;
+    margin-top: 16px;
+    height: 32px;
     border: 1px solid #ff3131;
     border-radius: 6px;
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
     background: #fff;
+    box-shadow: rgba(31, 35, 40, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
     color: #ff3131;
     text-decoration: none;
   }
@@ -96,7 +144,7 @@
   /* Footer styles */
   footer {
     min-height:50px;
-    background-color: #333;
+    background-color: rgb(36, 41, 47);
     color: #fff;
     text-align: center;
     padding: 20px;

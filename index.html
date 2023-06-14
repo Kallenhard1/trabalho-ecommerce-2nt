@@ -12,8 +12,8 @@
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="index_3.html" target="_blank">Produtos</a></li>
-        <li><a href="#" target="_blank">Carinho</a></li>
+        <li><a href="#" target="_blank">Produtos</a></li>
+        <li><a href="#" target="_blank">Carrinho</a></li>
         <li><a href="#" target="_blank">Contato</a></li>
       </ul>
     </nav>
@@ -21,19 +21,37 @@
 
   <main>
     <section id="products">
+      <h2>Nossos produtos</h2>
+      <div class="product-reel">
+        <img src="./assets/produto_1.png" id="imgClickAndChange">
+      </div>
       <h2>Produtos mais procurados</h2>
       <div class="product">
-        <img src="./assets/produto_1.png" alt="Produto 1">
+        <img src="./assets/produto_1.png" id="product-1" alt="Produto 1">
         <h3>Produto 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <input type="submit" name="Produto-1" class="product-button" value="Comprar">
       </div>
 
       <div class="product">
-        <img src="./assets/produto_2.webp" alt="Produto 2">
+        <img src="./assets/produto_2.webp" id="product-2" alt="Produto 2">
         <h3>Produto 2</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <input type="submit" name="Produto-2" class="product-button" value="Comprar">
+      </div>
+
+      <div class="product">
+        <img src="./assets/produto_3.webp" id="product-3" alt="Produto 3">
+        <h3>Produto 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <input type="submit" name="Produto-3" class="product-button" value="Comprar">
+      </div>
+
+      <div class="product">
+        <img src="./assets/produto_4.webp" id="product-4" alt="Produto 4">
+        <h3>Produto 4</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <input type="submit" name="Produto-4" class="product-button" value="Comprar">
       </div>
 
       <!-- Additional product items -->
@@ -45,17 +63,6 @@
     <p>&copy; 2023 My E-commerce Store. All rights reserved.</p>
   </footer>
 
-  <script>
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const addToCartButtons = document.querySelectorAll('.product-button');
-        addToCartButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            alert(`Produto ${button.name} adicionado ao carrinho!`);
-        });
-        });
-    });
-
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>
