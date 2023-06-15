@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-commerce</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="produtos.css">
 </head>
 <body>
   <header>
@@ -12,7 +12,7 @@
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="produtos.html" target="_blank">Produtos</a></li>
+        <li><a href="#" target="_blank">Produtos</a></li>
         <li><a href="#" target="_blank">Carrinho</a></li>
         <li><a href="#" target="_blank">Contato</a></li>
       </ul>
@@ -20,16 +20,12 @@
   </header>
 
   <main>
+    <form class="search">
+      <input type="text" class="search-text" placeholder="Pesquise um produto pelo nome">
+      <input type="submit" class="search-button" value="pesquisar">
+    </form>
+    <h2>Produtos</h2>
     <section id="products">
-      <h2>Nossos produtos</h2>
-      <div class="product-reel">
-        <img src="./assets/produto_1.png" id="imgClickAndChange">
-      </div>
-      <form class="search">
-        <input type="text" class="search-text" placeholder="Pesquise um produto pelo nome">
-        <input type="submit" class="search-button" value="pesquisar">
-      </form>
-      <h2>Produtos mais procurados</h2>
       <div class="product">
         <img src="./assets/produto_1.png" id="product-1" alt="Produto 1">
         <h3><a href="#" target="_blank">Produto 1</a></h3>
@@ -67,6 +63,6 @@
     <p>&copy; 2023 My E-commerce Store. All rights reserved.</p>
   </footer>
 
-  <script src="index.js"></script>
+  <script src="produto.js"></script>
 </body>
 </html>

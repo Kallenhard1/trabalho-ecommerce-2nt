@@ -1,7 +1,5 @@
-const images = ["./assets/produto_1.png", "./assets/produto_2.webp", "./assets/produto_3.webp", "./assets/produto_4.webp"];
-
 const cart = [];
-
+const images = ["./assets/produto_1.png", "./assets/produto_2.webp", "./assets/produto_3.webp", "./assets/produto_4.webp"];
 let imgState = 0;
 
 const imgTag = document.getElementById("imgClickAndChange");
@@ -20,6 +18,7 @@ function addToCart() {
 function changeImage(event) {
   imgState = (++imgState % images.length);
   event.target.src = images[imgState];
+  console.log(imgState);
 }
 
 document.addEventListener('DOMContentLoaded', addToCart);
