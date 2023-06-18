@@ -1,3 +1,4 @@
+const cartLinks = [];
 const cart = [];
 const images = ["./assets/produto_1.png", "./assets/produto_2.webp", "./assets/produto_3.webp", "./assets/produto_4.webp"];
 let imgState = 0;
@@ -5,12 +6,14 @@ let imgState = 0;
 const imgTag = document.getElementById("imgClickAndChange");
 const addToCartButtons = document.querySelectorAll('.product-button');
 
+
 function addToCart() {
   addToCartButtons.forEach((button) => {
     button.addEventListener('click', () => {
-      cart.push(button.name);
+      cart.push({ name: button.name });
       console.log(cart);
-      alert(`Você tem os produtos ${cart.join(', ')} adicionados ao carrinho!`);
+      const name = cart.map(obj => obj.name).join(', ');
+      alert(`Você tem os produtos ${JSON.stringify(name)} adicionados ao carrinho!`);
     });
   });
 }
